@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.header-box {
+  height: 75px;
+  width: 100%;
+  background: #01a2c9;
+  position: relative;
+}
+
+.logo{
+  width: 150px;
+  position: absolute;
+  top: -20px;
+  left: -30px;
+}
+
+.burger {
+  width: 50px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.main-image-box {
+  width: 100%;
+  position: relative;
+}
+
+.main-image-box-image {
+  position: absolute;
+}
+
+.main-image-box-image img{
+  width: 100%;
+}
