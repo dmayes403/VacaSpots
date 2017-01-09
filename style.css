@@ -32,15 +32,42 @@ main {
   top: 10px;
 }
 
-.main-image-box {
+/*.main-image-box {
   width: 100%;
   position: relative;
-}
+}*/
 
 .main-image-box-image {
   position: absolute;
+  width: 100%;
+  height: 175px;
+  background: url('./images/bermudaCover.jpg') center no-repeat;
+  background-size: cover;
 }
 
-.main-image-box-image img{
+.main-image-box-text {
+  position: absolute;
+  color: white;
+  border: 2px solid white;
+  padding: 5px 25px;
+  line-height: 0;
+  display: flex;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  /*transform: translateY(-50%);*/
+}
+
+.main-bottom-container {
+  position: relative;
+  padding: 10%;
+}
+
+.img-scroll {
+  position: absolute;
+  height: 100px;
+}
+
+.img-scroll a {
   width: 100%;
 }
