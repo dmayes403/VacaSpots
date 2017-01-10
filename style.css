@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  font-family: 'Varela Round', sans-serif;
 }
 
 main {
@@ -19,17 +20,17 @@ main {
 }
 
 .logo{
-  width: 150px;
+  width: 125px;
   position: absolute;
-  top: -20px;
-  left: -30px;
+  top: -10px;
+  left: -20px;
 }
 
 .burger {
-  width: 50px;
+  width: 40px;
   position: absolute;
   right: 20px;
-  top: 10px;
+  top: 15px;
 }
 
 .main-image-box {
@@ -45,6 +46,10 @@ main {
   background-size: cover;
 }
 
+h1 {
+  font-size: 30px;
+}
+
 .main-image-box-text {
   position: absolute;
   color: white;
@@ -52,13 +57,79 @@ main {
   padding: 5px 25px;
   line-height: 0;
   display: flex;
-  top: 60px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
   /*transform: translateY(-50%);*/
 }
 
-.main-bottom-container {
+@media (min-width: 302px){
+  .main-image-box {
+    height: 275px;
+    position: relative;
+  }
+
+  .main-image-box-image {
+    position: absolute;
+    width: 100%;
+    height: 275px;
+    background: url('./images/bermudaCover.jpg') center no-repeat;
+    background-size: cover;
+  }
+
+  .main-image-box-text {
+    position: absolute;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 25px;
+    line-height: 0;
+    display: flex;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    /*transform: translateY(-50%);*/
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+/*end of 300-min main image media query*/
+
+@media (min-width: 452px) {
+  .main-image-box {
+    height: 400px;
+    position: relative;
+  }
+
+  .main-image-box-image {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: url('./images/bermudaCover.jpg') center no-repeat;
+    background-size: cover;
+  }
+
+  .main-image-box-text {
+    position: absolute;
+    color: white;
+    border: 3px solid white;
+    padding: 20px 50px;
+    line-height: 0;
+    display: flex;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    /*transform: translateY(-50%);*/
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+}
+/*end of 450-min main image media query*/
+
+.carousel {
   position: relative;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -67,10 +138,124 @@ main {
 .img-scroll {
   overflow: auto;
   white-space: nowrap;
+  /*padding: 10px;*/
 }
 
 .img-scroll img {
   /*width: 100%;*/
   height: 100px;
   display: inline-block;
+}
+
+@media (min-width: 302px){
+  .carousel {
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .img-scroll {
+    overflow: auto;
+    white-space: nowrap;
+    /*padding: 10px;*/
+  }
+
+  .img-scroll img {
+    /*width: 100%;*/
+    height: 150px;
+    display: inline-block;
+  }
+}
+/*end of carousel 300-min*/
+
+@media (min-width: 452px){
+  .carousel {
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .img-scroll {
+    overflow: auto;
+    white-space: nowrap;
+    /*padding: 10px;*/
+  }
+
+  .img-scroll img {
+    /*width: 100%;*/
+    height: 225px;
+    display: inline-block;
+  }
+}
+/*end of carousel 452-min*/
+.bottom-box {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.excursions {
+  max-width: 800px;
+  text-align: center;
+}
+
+@media (min-width: 602px){
+  .excursions {
+    text-align: center;
+    margin: auto;
+  }
+}
+/*end of 602-min excursion section*/
+
+.excursions h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+}
+
+.excursions p {
+  font-size: 16px;
+}
+
+@media (min-width: 602px){
+  .excursions h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .excursions p {
+    font-size: 20px;
+  }
+}
+/*end of 602-min excursions heading*/
+
+.excursion-images {
+  /*max-width: 640px;*/
+  margin: auto;
+}
+
+.excursion-images img{
+  width: 100%;
+}
+
+.excursions {
+  /*max-width: 90%;*/
+  margin: auto;
+}
+
+.footer {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background: #01a2c9;
+  color: white;
+  padding: 10px;
+  padding-right: 5%;
+}
+
+.footer h2 {
+  padding: 0;
+  margin: 0;
+  right: 0;
+  text-align: right;
 }
